@@ -1,0 +1,33 @@
+{
+  "name": "acapela-init",
+  "description": "Webcomponent acapela-init following open-wc recommendations",
+  "license": "MIT",
+  "author": "acapela-init",
+  "version": "0.0.0",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
+  },
+  "dependencies": {
+    "@vaadin/icon": "^23.1.4",
+    "@vaadin/icons": "^23.1.4",
+    "lit": "^2.0.2",
+    "macro-carousel": "^1.0.0"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@web/dev-server": "^0.1.28",
+    "@web/rollup-plugin-copy": "^0.3.0",
+    "@web/rollup-plugin-html": "^1.10.3",
+    "concurrently": "^5.3.0",
+    "rollup": "^2.77.2",
+    "rollup-plugin-image": "^1.0.2",
+    "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-summary": "^1.4.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.2"
+  },
+  "customElements": "custom-elements.json"
+}

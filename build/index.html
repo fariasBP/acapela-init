@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="es"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="Description" content="Put your description here.">
+    <base href="/">
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #ededed;
+      }
+    </style>
+    <title>acapela-init</title>
+
+    </head><body><custom-style>
+      <style>
+        html {
+          --lumo-primary-text-color: rgb(0, 0, 0);
+          --lumo-primary-color-50pct: rgba(0, 0, 0, 0.5);
+          --lumo-primary-color-10pct: rgba(0, 0, 0, 0.1);
+          --lumo-primary-color: hsl(214, 0%, 0%);
+        }
+
+        [theme~="dark"] {
+          --lumo-base-color: hsl(214, 20%, 19%);
+          --lumo-primary-text-color: rgb(108, 131, 163);
+          --lumo-primary-color-50pct: rgba(78, 101, 131, 0.5);
+          --lumo-primary-color-10pct: rgba(78, 101, 131, 0.1);
+          --lumo-primary-color: hsl(214, 25%, 41%);
+        }
+        body {
+          background-color: transparent !important;
+        }
+        /* #particles-js canvas {
+          display: block;
+          vertical-align: bottom;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+          opacity: 1;
+          -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
+          transition: opacity 0.8s ease, transform 1.4s ease;
+        } */
+        #particles-js {
+          /* min-height: 500px; */
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: white;
+          z-index: -10;
+        }
+      </style>
+    </custom-style>
+  
+
+  
+    <div id="particles-js"></div>
+    <acapela-init></acapela-init>
+    <script src="assets/particles.min-28e077fc.js"></script>
+    
+    <script>
+      particlesJS.load("particles-js", "assets/particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
+  
+
+<script type="module" src="./index.js"></script></body></html>
